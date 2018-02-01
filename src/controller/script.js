@@ -1,6 +1,3 @@
-$('.')
-
-
 function onload() {
     const path = "https://hackbras.github.io/portal-de-protocolos/data.json";
     const xhttp = new XMLHttpRequest();
@@ -11,6 +8,5 @@ function onload() {
     }
     xhttp.send();
 
-    portifolio();
 
 }

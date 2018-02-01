@@ -4,9 +4,16 @@
     padding: 0px;
 }
 
-.main-header,
+.main-header {
+    background-color: #3765af;
+}
+
 .main-footer {
     background-color: gray;
+}
+
+.main-menu {
+    height: 35px;
 }
 
 .main-menu,
@@ -19,14 +26,54 @@
     color: black;
 }
 
+.main-logo {
+    font-size: 40px;
+    padding: 15px;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+}
+
+.main-logo__image {
+    width: 30px;
+}
+
+.main-logo__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-menu__filter {
+    width: 25px;
+}
+
+.main-menu__option .form-label,
+.main-menu__option .form-label__small {
+    color: #fff;
+}
+
+.main-menu__option {
+    display: inline-block;
+}
+
+.main-section {
+    padding: 15px;
+}
+
 .form-protocol {
     padding: 5px;
-    background-color: lightblue;
+    background-color: #3765af;
 }
 
 .table-protocol {
-    background-color: lightskyblue;
-    margin: 5px;
+    background-color: #b1d2e6;
+    margin: auto;
+}
+
+.table-caption {
+    text-decoration: bold;
+    background-color: black;
+    color: #fff;
 }
 
 .table-protocol,
@@ -56,9 +103,11 @@ tbody td {
 /* ---- Components ----*/
 
 .form-text,
-.form-buttom {
+.form-buttom,
+.form-option,
+.form-selection {
     border-radius: 3px;
-    padding: 3px;
+    padding: 5px;
 }
 
 .form-label,
@@ -70,4 +119,9 @@ tbody td {
 .label-process {
     display: block;
     line-height: 1.6;
+}
+
+.form-subscription {
+    padding: 5px;
+    text-align: center;
 }

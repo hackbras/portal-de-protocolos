@@ -1,38 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
     <head>
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" href="src/style.css">
-        <script src="src/script.js"></script>
+        <script src="src/controller/validationt.js"></script>
+        <script src="src/controller/script.js"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
     </head>
 
     <body onload="onload()">
         <header class="main-header">
+            <h1 class="main-logo">
+                <img class="main-logo__image" src="assets/logo.png" alt="logo do sistema de protocolos com imagem do martelo de um juiz.">
+                <a class="main-logo__link" href="#">Portal de Protocolos</a>
+            </h1>
+
             <nav class="main-menu">
-                <a href="#">Logo</a>
-                <a href="#">a</a>
-                <a href="#">b</a>
-                <a href="#">c</a>
+                <a class="main-menu__option" href="#">
+                    <form class="form-protocol" action="">
+
+                        <label class="form-label" for="">Nome Completo:</label>
+                        <input id="form-text__name" class="form-text" name="name-complete" type="text" pattern="[a-zA-Z]+$" minlength="2" maxlength="100" onmouseout="validation(this.id , this.name )" require>
+
+                        <label class="form-label" for="">CPF:</label>
+                        <input id="form-text__cpf" class="form-text" name="cpf" type="number" pattern="[a-zA-Z0-9]" minlength="11" maxlength="11" onmouseout="validation(this.id , this.name )" require disabled>
+
+                        <label class="form-label" for="">Protocolo:</label>
+                        <input id="form-text__protocol" class="form-text" name="protocol" type="number" pattern="[a-zA-Z0-9]" minlength="1" maxlength="11" onmouseout="validation(this.id , this.name )" require disabled>
+                    </form>
+                </a>
+                <a class="main-menu__option order" href="#">
+                    <label class="form-label" for="order-by">ordenar por:</label>
+                    <select class="form-selection order-by" name="ordenar" id="order-by" disabled>
+                        <option class="form-option order-by__protocol-plus" value="protocol-default">escolha</option>
+                        <option class="form-option order-by__protocol-plus" value="protocol-plus">Maiores Protocolos</option>
+                        <option class="form-option order-by__protocol-minus" value="protocol-minus">Menores Protocolos</option>
+                        <option class="form-option order-by__status-a" value="status-a">Status A</option>
+                        <option class="form-option order-by__status-b" value="status-b">Status B</option>
+                    </select>
+                    <img class="main-menu__filter" src="assets/filter.png" alt="">
+                </a>
             </nav>
         </header>
 
-        <section>
-            <form class="form-protocol" action="">
-                <legend class="form-legend">Consulta de Protocolos</legend>
-
-                <label class="form-label" for="">Nome Completo:</label>
-                <input id="form-text__name" class="form-text" type="text" pattern="[A-Za-z]{3}" require>
-
-                <label class="form-label" for="">CPF:</label>
-                <input id="form-text__cpf" class="form-text" type="text" pattern="" require disabled>
-
-                <label class="form-label" for="">Protocolo:</label>
-                <input id="form-text__protocol" class="form-text" type="text" pattern="" require disabled>
-            </form>
-
+        <section class="main-section">
             <table class="table-protocol">
                 <caption class="table-caption">Protocolo nº: 0000000000</caption>
                 <thead class="table-head">
@@ -48,7 +61,7 @@
                             <label class="label-process label-process__number" for=""> Nº: </label>
                             <label class="label-process label-process__status" for="">status:</label>
                         </td>
-                        <td class="table-details" onmouseover="alert('Detalhes')">
+                        <td class="table-details" onmouseover="">
                             <label class="label-process label-process__claimant" for="">Requerente: </label>
                             <label class="label-process label-process__required" for="">Requerido: </label>
                             <label class="label-process label-process__lawyer" for="">Advogados:</label>
@@ -56,7 +69,7 @@
                             <li>Advogado de defesa</li>
                             <label class="label-process label-process__description" for="">Descrição: </label>
                         </td>
-                        <td class="table-history" onmouseover="alert('Histórico')">
+                        <td class="table-history" onmouseover="">
                             <label class="label-process label-process__activities" for="">Atividades:</label>
                             <li>Ações</li>
                             <li>Movimentações</li>
@@ -72,7 +85,7 @@
         <footer class="main-footer">
             <form class="form-subscription" action="">
                 <label class="form-label" for="">Inscreva-se</label>
-                <input class="form-text" type="text">
+                <input class="form-text" placeholder="ex.: SeuEmail@provedor.com" type="text">
                 <input class="form-buttom" type="submit">
             </form>
         </footer>

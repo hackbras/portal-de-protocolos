@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/hackbras/portal-de-protocolos#readme",
   "devDependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "node-sass": "^4.7.2"
   }
 }
