@@ -1,0 +1,23 @@
+{
+  "name": "4-teste-tecnico__portal-de-protocolos",
+  "version": "1.0.0",
+  "description": "Nesta segunda etapa queremos medir a sua capacidade de entrega de valor.\r Desenvolva uma solução que atenda às histórias (necessidades) descritas abaixo.\r Não deixe de justificar o porquê de cada decisão tomada ao propor a solução.\r Sinta-se livre para propor mudanças e sugerir novas regras de negócio.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hackbras/portal-de-protocolos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hackbras/portal-de-protocolos/issues"
+  },
+  "homepage": "https://github.com/hackbras/portal-de-protocolos#readme",
+  "devDependencies": {
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    </head>
+
+    <body onload="onload()">
+        <header class="main-header">
+            <nav class="main-menu">
+                <a href="#">Logo</a>
+                <a href="#">a</a>
+                <a href="#">b</a>
+                <a href="#">c</a>
+            </nav>
+        </header>
+
+        <section>
+            <form class="form-protocol" action="">
+                <legend class="form-legend">Consulta de Protocolos</legend>
+
+                <label class="form-label" for="">Nome Completo:</label>
+                <input class="form-text" type="text" pattern="" require>
+
+                <label class="form-label" for="">CPF:</label>
+                <input class="form-text" type="text" pattern="" require>
+
+                <label class="form-label" for="">Protocolo:</label>
+                <input class="form-text" type="text" pattern="" require>
+            </form>
+
+            <table class="table-protocol">
+                <caption class="table-caption">Protocolo nº: 0000000000</caption>
+                <thead class="table-head">
+                    <tr class="table-row">
+                        <th class="table-title">Processo</th>
+                        <th class="table-title">Detalhes</th>
+                        <th class="table-title">Histórico</th>
+                    </tr>
+                </thead>
+                <tbody class="table-body">
+                    <tr class="table-row">
+                        <td class="table-process">
+                            <label class="label-process label-process__number" for=""> Nº: </label>
+                            <label class="label-process label-process__status" for="">status:</label>
+                        </td>
+                        <td class="table-details" onmouseover="alert('Detalhes')">
+                            <label class="label-process label-process__claimant" for="">Requerente: </label>
+                            <label class="label-process label-process__required" for="">Requerido: </label>
+                            <label class="label-process label-process__lawyer" for="">Advogados:</label>
+                            <li>Advogado de Acusação</li>
+                            <li>Advogado de defesa</li>
+                            <label class="label-process label-process__description" for="">Descrição: </label>
+                        </td>
+                        <td class="table-history" onmouseover="alert('Histórico')">
+                            <label class="label-process label-process__activities" for="">Atividades:</label>
+                            <li>Ações</li>
+                            <li>Movimentações</li>
+                            <label class="label-process label-process__documents" for="">Documentos:</label>
+                            <li>Arquivos</li>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <footer class="main-footer">
+            <form class="form-subscription" action="">
+                <label class="form-label" for="">Inscreva-se</label>
+                <input class="form-text" type="text">
+                <input class="form-buttom" type="submit">
+            </form>
+        </footer>
+
+    </body>
+
+</html>
