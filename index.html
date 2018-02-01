@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" href="src/style.css">
+        <script src="src/script.js"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
     </head>
 
@@ -23,13 +24,13 @@
                 <legend class="form-legend">Consulta de Protocolos</legend>
 
                 <label class="form-label" for="">Nome Completo:</label>
-                <input class="form-text" type="text" pattern="" require>
+                <input id="form-text__name" class="form-text" type="text" pattern="[A-Za-z]{3}" require>
 
                 <label class="form-label" for="">CPF:</label>
-                <input class="form-text" type="text" pattern="" require>
+                <input id="form-text__cpf" class="form-text" type="text" pattern="" require disabled>
 
                 <label class="form-label" for="">Protocolo:</label>
-                <input class="form-text" type="text" pattern="" require>
+                <input id="form-text__protocol" class="form-text" type="text" pattern="" require disabled>
             </form>
 
             <table class="table-protocol">

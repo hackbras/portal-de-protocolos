@@ -1,5 +1,8 @@
+$('.')
+
+
 function onload() {
-    const path = "https://hackbras.github.io/codeista/model/" + languageSelected + ".json";
+    const path = "https://hackbras.github.io/portal-de-protocolos/data.json";
     const xhttp = new XMLHttpRequest();
     xhttp.open("GET", path, true);
 
