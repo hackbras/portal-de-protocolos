@@ -35,7 +35,7 @@
 
 ---
 
-**TECHNOLOGY AND METHODOS UTILIZEDS:**
+**Tecnologias e Métodos utilizados:**
 * html5, CSS3 e javascript;
 * GIT bash;
 * Methodology BEM;
@@ -43,3 +43,37 @@
 * wireframe;
 * devtools
 
+----
+
+**Tecnologias e justificativas**
+
+* utilizei:
+
+* 1º html5: Devido as propriedades de validação ;
+* 2º GIT bash : Para fazer o versionamento do código;
+* 3º Methodology BEM : Para facilitar a compreensão e manutençãoi do código;
+* 4º wireframe: Para planejamento da tela;
+* 5º devtools: Para auxiliar no desenvolvimento. 
+
+
+* Obs.: Eu iria utilizar algumas soluções porém não foi possível devido a tempo disponível.
+
+* 1º javascript: validação do próprio html5,
+obs.: Não concluí porem tenho um projeto que demonstra meus conhecimentos em validações no repositório suportedesk.
+
+* 2º jquery: para fazer seleção do DOM, a sua manipulação e animações;
+obs.: Não concluí porem tenho um projeto que demonstra meus conhecimentos em jquery, no repositório printshop.
+
+* 3º jasmine: Para testar as regras de negócio;
+
+* 4º Regexp: Para a procura de protocolos e processo
+obs.: Não concluí porem tenho um projeto que demonstra meus conhecimentos em Regexp, no repositório codeista.
+
+* 5º Sass: Para auxiliar a manutenção do código
+obs.: Não concluí porem tenho vários projetos que demonstram meus conhecimentos meste meu perfil do github.
+
+* 6º json: para criar tabelas dinamicamente e pesquisá-las;
+obs.: Não concluí porem tenho um projeto que demonstra meus conhecimentos em json, no repositório codeista.
+
+* 7º Documentação: Para facilitar a manutenção futuramente e conhecimento do sistema. 
+obs.: Comecei a fazer mas está no caderno e o tempo se esgotou.
