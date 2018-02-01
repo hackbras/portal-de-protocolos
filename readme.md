@@ -23,4 +23,4 @@ Histórico de Documentos (histórico dos arquivos submetidos durante o processo)
 
 #wireframe
 
-![alt text](assets/wireframe.png)
+![alt text](assets/wireframe2.png)
